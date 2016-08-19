@@ -1,4 +1,4 @@
-## My Whiskey Log
+# My Whiskey Log
 
 Steps to Run
 ---

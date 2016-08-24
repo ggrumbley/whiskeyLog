@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import React, {Component, PropTypes} from 'react';
+
 import '../css/components/Rating.css';
 
 class Rating extends Component {
@@ -34,7 +35,7 @@ class Rating extends Component {
   componentWillReceiveProps(nextProps) {
     this.setRating(nextProps.defaultValue);
   }
-  
+
   render() {
       const stars = [];
       for (let i = 1; i <= this.props.max; i++) {

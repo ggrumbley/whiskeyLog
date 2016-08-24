@@ -1,6 +1,7 @@
 import classNames from 'classnames';
-import '../css/components/Button.css';
 import React, {PropTypes} from 'react';
+
+import '../css/components/Button.css';
 
 const Button = props =>
   props.href

@@ -1,0 +1,21 @@
+.Whiskeylog .WhiskeylogToolbar {
+  margin: 40px;
+}
+
+.Whiskeylog .WhiskeylogToolbarAdd {
+  float: left;
+}
+
+.Whiskeylog .WhiskeylogToolbarSearch {
+  float: right;
+}
+
+.Whiskeylog .WhiskeylogToolbarAddButton {
+  font-size: 32px;
+}
+
+.Whiskeylog .WhiskeylogDatagrid {
+  clear: both;
+  margin: 40px;
+  padding-top: 20px;
+}

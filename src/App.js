@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import Logo from './components/Logo';
-import Excel from './components/Excel';
-import './css/App.css';
+import Whiskeylog from './components/Whiskeylog';
+import schema from './schema';
 
-var headers = localStorage.getItem('headers');
+import './css/App.css'
 
-var data = localStorage.getItem('data');
+let data = JSON.parse(localStorage.getItem('data'));
 
-if (!headers) {
-  headers = ['Title', 'Year', 'Rating', 'Comments'];
-  data = [['Test', '2015', '3', 'meh']];
+if (!data) {
+  data = {};
+  schema.forEach((item) => data[item.id] = item.sample);
+  data = [data];
 }
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='app-header'>
         <h1>
           <Logo/> My Whiskey Log
         </h1>
-        <Excel headers={headers} initialData={data}/>
+        <Whiskeylog schema={schema} initialdata={data} />
       </div>
     );
   }
